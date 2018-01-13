@@ -1,0 +1,63 @@
+targets=(
+    "centos-7"
+    "ubuntu-xenial"
+)
+pkgname="tmux"
+pkgver="2.6"
+pkgrel="1"
+pkgdesc="A terminal multiplexer"
+pkgdesclong=(
+    "A terminal multiplexer"
+)
+maintainer="Pritunl Misc <misc@pritunl.com>"
+arch="amd64"
+license=("BSD")
+section="utils"
+priority="optional"
+url="https://github.com/${pkgname}/${pkgname}"
+depends:yum=(
+    "glibc"
+    "libevent"
+    "ncurses"
+    "libutempter"
+)
+depends:apt=(
+    "libc6"
+    "libevent-2.0-5"
+    "libtinfo5"
+    "libncurses5"
+    "libutempter0"
+)
+
+makedepends:yum=(
+    "pkgconfig"
+    "libevent-devel"
+    "ncurses-devel"
+    "libutempter-devel"
+)
+makedepends:apt=(
+    "libevent-dev"
+    "libncurses-dev"
+    "libutempter-dev"
+)
+provides=("${pkgname}")
+conflicts=(
+    "${pkgname}"
+)
+sources=(
+    "${url}/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz"
+)
+hashsums=(
+    "b17cd170a94d7b58c0698752e1f4f263ab6dc47425230df7e53a6435cc7cd7e8"
+)
+
+build() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    ./configure --prefix=/usr --enable-utempter
+    make
+}
+
+package() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    make DESTDIR="${pkgdir}" install
+}
