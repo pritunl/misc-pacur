@@ -1,6 +1,6 @@
 # misc-pacur: misc package repository
 
-Misc package repository for centos-7 and ubuntu-xenial
+Misc package repository for amazonlinux-2, centos-7 and ubuntu-xenial
 
 ### amazonlinux-2
 
