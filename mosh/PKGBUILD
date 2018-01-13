@@ -1,4 +1,5 @@
 targets=(
+    "amazonlinux-2017.12"
     "centos-7"
     "ubuntu-xenial"
 )
