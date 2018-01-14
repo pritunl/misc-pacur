@@ -1,7 +1,9 @@
 targets=(
+    "amazonlinux-1"
     "amazonlinux-2"
     "centos-7"
     "ubuntu-xenial"
+    "ubuntu-bionic"
 )
 pkgname="tmux"
 pkgver="2.6"
