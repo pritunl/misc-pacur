@@ -34,9 +34,6 @@ makedepends:yum=(
     "openssl-devel"
     "protobuf-devel"
     "protobuf-compiler"
-    "protobuf-c"
-    "protobuf-c-compiler"
-    "protobuf-c-devel"
     "ncurses-devel"
     "libutempter-devel"
 )
