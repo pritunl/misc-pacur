@@ -1,9 +1,7 @@
 targets=(
-    "amazonlinux-1"
     "amazonlinux-2"
     "centos-7"
-    "ubuntu-xenial"
-    "ubuntu-bionic"
+    "oraclelinux-7"
 )
 pkgname="mosh"
 pkgver="1.3.2"

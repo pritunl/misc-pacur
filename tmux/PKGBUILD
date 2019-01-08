@@ -1,12 +1,10 @@
 targets=(
-    "amazonlinux-1"
     "amazonlinux-2"
     "centos-7"
-    "ubuntu-xenial"
-    "ubuntu-bionic"
+    "oraclelinux-7"
 )
 pkgname="tmux"
-pkgver="2.6"
+pkgver="2.8"
 pkgrel="1"
 pkgdesc="A terminal multiplexer"
 pkgdesclong=(
