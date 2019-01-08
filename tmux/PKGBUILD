@@ -22,24 +22,11 @@ depends:yum=(
     "ncurses"
     "libutempter"
 )
-depends:apt=(
-    "libc6"
-    "libevent-2.0-5"
-    "libtinfo5"
-    "libncurses5"
-    "libutempter0"
-)
-
 makedepends:yum=(
     "pkgconfig"
     "libevent-devel"
     "ncurses-devel"
     "libutempter-devel"
-)
-makedepends:apt=(
-    "libevent-dev"
-    "libncurses-dev"
-    "libutempter-dev"
 )
 provides=("${pkgname}")
 conflicts=(

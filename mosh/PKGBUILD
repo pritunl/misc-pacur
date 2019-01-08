@@ -30,32 +30,15 @@ depends:yum=(
     "openssl"
     "perl"
 )
-depends:apt=(
-    "libc6"
-    "libgcc1"
-    "libprotobuf9v5"
-    "libssl1.0.0"
-    "libstdc++6"
-    "libtinfo5"
-    "libutempter0"
-    "openssh-client"
-    "zlib1g"
-    "libio-socket-ip-perl"
-)
 makedepends:yum=(
     "openssl-devel"
     "protobuf-devel"
+    "protobuf-compiler"
+    "protobuf-c"
+    "protobuf-c-compiler"
+    "protobuf-c-devel"
     "ncurses-devel"
     "libutempter-devel"
-)
-makedepends:apt=(
-    "pkg-config"
-    "dh-autoreconf"
-    "libssl-dev"
-    "libprotobuf-dev"
-    "libncurses-dev"
-    "protobuf-compiler"
-    "libutempter-dev"
 )
 provides=("${pkgname}")
 conflicts=(
